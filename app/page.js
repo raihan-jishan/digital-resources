@@ -1,18 +1,20 @@
-import ClientsReviews from './clientreviews/page';
-import Contact from './contact/page';
-import Hero from "./home/page";
-import Ourworks from './ourwors/page';
-import Products from "./products/page";
-import Service from "./services/page";
+import Blog from "@/components/blog";
+import Contact from "@/components/contact";
+import Features from "@/components/features";
+import Hero from "@/components/hero";
+import Products from "@/components/products";
+import Review from "@/components/review";
+import Service from "@/components/service";
 export default function Home() {
   return (
-    <div>
+    <div className="dark:bg-gray-900 dark:text-white text-black bg-white ">
       <Hero />
-      <Service /> 
-      <Products /> 
-      <Ourworks />  
-      <ClientsReviews /> 
-      <Contact />
-      </div>
+      <Features />
+      <Service />
+      <Products />
+      <Review />
+      <Blog />
+       <Contact /> 
+    </div>
   );
 }

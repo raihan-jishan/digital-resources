@@ -1,8 +1,9 @@
-import { Montserrat } from "next/font/google";
-import Footer from "./components/Footer/Footer";
-import Nav from "./components/Nav/Nav.jsx";
+import Footer from "@/components/footer";
+// import Navbar from "@/components/navbar";
+import Navbar from "@/components/navbar";
+import { Poppins } from "next/font/google";
 import "./globals.css";
-const montserrat = Montserrat({ subsets: ["latin"], weight: "400" });
+const poppins = Poppins({ subsets: ["latin"], weight: ["400"] });
 export const metadata = {
   title: "digital-resources",
   description: "a modern world modern service website",
@@ -20,9 +21,9 @@ export default function RootLayout({ children }) {
         href={"https://thumbs2.imgbox.com/c7/82/LsVK37xH_t.png"}
         sizes="any"
       />
-      <body className={montserrat.className}>
-        <Nav />
-        <div className="mt-24 ">{children}</div>
+      <body className={poppins.className}>
+        <Navbar />
+        {children}
         <Footer />
       </body>
     </html>

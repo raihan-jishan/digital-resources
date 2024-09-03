@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn-gradient {
+    background: rgb(147, 51, 234);
+    background: linear-gradient(
+      90deg,
+      rgba(147, 51, 234, 1) 0%,
+      rgba(0, 0, 0, 1) 71%
+    );
+  }
+  .lightBtn-gradient-nav {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 91%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  }
+  .darkBtn-gradient {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(192, 132, 252, 1) 100%
+    );
+  }
+  .lightBtn-gradient {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 76%,
+      rgba(192, 132, 252, 1) 100%
+    );
+  }
+  .headline-gradient {
+    background: rgb(192, 132, 252);
+    background: linear-gradient(
+      90deg,
+      rgba(192, 132, 252, 0.7791491596638656) 1%,
+      rgba(192, 132, 252, 1) 99%
+    );
+  }
+}
