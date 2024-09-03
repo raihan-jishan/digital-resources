@@ -24,6 +24,7 @@ const Hero = () => {
                 pyFull
                 pxFull
                 varientHero
+                widthMedium
                 icon={<FaPencilRuler size={22} />}
               />
               <PrimaryBtn
@@ -32,6 +33,7 @@ const Hero = () => {
                 pyFull
                 pxFull
                 varientHero
+                widthMedium
                 icon={<IoVideocamOutline size={22} />}
               />
             </div>

@@ -72,7 +72,7 @@ export const productCard = ({
         <p className="mb-3 mt-5 font-normal text-gray-700 dark:text-gray-400">
           {description}
         </p>
-        <div className="text-center flex items-center justify-between w-full mt-6">
+        <div className="text-center flex items-center justify-between w-full mt-6 gap-5">
           <PrimaryBtn
             text={"view details"}
             path={path}

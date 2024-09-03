@@ -14,3 +14,14 @@ export const Animation = ({ children, className, delay = 0.2, reverse }) => {
     </motion.div>
   );
 };
+
+export const ButtonAnimation = ({ children , className}) => {
+  return (
+    <motion.button
+    whileHover={{ scale: 0.9 }}
+    className={cn(  className)}
+    >
+      {children}
+    </motion.button>
+  );
+};

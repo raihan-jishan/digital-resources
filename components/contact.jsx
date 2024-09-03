@@ -22,9 +22,9 @@ const Contact = () => {
           }
         />
         <Wrapper className={"mt-10"}>
-          <div className="grid sm:grid-cols-2 items-start gap-14 p-8 mx-auto max-w-4xl bg-white shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-md ">
+          <div className="grid sm:grid-cols-2 items-start gap-14 p-8 mx-auto max-w-4xl bg-white dark:bg-gray-800  shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-md ">
             <div>
-              <h1 className="text-gray-800 text-3xl ">Fell free</h1>
+              <h1 className="text-gray-800 text-3xl dark:text-white dark:font-semibold ">Fell free</h1>
               <p className="text-sm text-gray-500 mt-4">
                 Have some big idea or brand to develop and need help? Then reach
                 out we'd love to hear about your project and provide help.
@@ -50,11 +50,11 @@ const Contact = () => {
               </div>
 
               <div className="mt-12">
-                <h2 className="text-gray-800 text-base ">Socials</h2>
+                <h2 className="text-gray-800 text-base  dark:text-white dark:font-semibold">Socials</h2>
 
-                <ul className="flex mt-4 space-x-4">
-                  <li className=" h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                    <a href="">
+                <ul className="flex mt-4 space-x-4 dark:shadow-2xl dark:shadow-secondary/30">
+                  <li className=" h-10 w-10 rounded-full flex items-center justify-center shrink-0 ">
+                    <a href=""  >
                       <FaFacebook size={30} />
                     </a>
                   </li>
