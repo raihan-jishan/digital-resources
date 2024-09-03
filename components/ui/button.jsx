@@ -15,7 +15,9 @@ export const primaryBtn = ({
   widthMedium,
 }) => {
   return (
-    <ButtonAnimation className={widthMedium ? "" : "w-full h-full"}>
+    <ButtonAnimation
+      className={widthMedium ? "max-lg:w-full max-lg:h-full" : "w-full h-full"}
+    >
       <Link
         className={`   flex items-center justify-center ${
           shadow ? "shadow-2xl shadow-black/90 hover:shadow-secondary/60" : ""
