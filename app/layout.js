@@ -1,9 +1,8 @@
-import Footer from "@/components/footer";
-// import Navbar from "@/components/navbar";
-import Navbar from "@/components/navbar";
-import { Poppins } from "next/font/google";
+import { Montserrat, Poppins } from "next/font/google";
 import "./globals.css";
-const poppins = Poppins({ subsets: ["latin"], weight: ["400"] });
+import "./font.css";
+import Navbar from "@/components/shared/navbar";
+const montserrat = Montserrat({ subsets: ["sans-serif"], weight: ["400"] });
 export const metadata = {
   title: "digital-resources",
   description: "a modern world modern service website",
@@ -21,11 +20,10 @@ export default function RootLayout({ children }) {
         href={"https://thumbs2.imgbox.com/c7/82/LsVK37xH_t.png"}
         sizes="any"
       />
-      <body className={poppins.className}>
+      <body className={montserrat.className}>
         <Navbar />
         {children}
-        <Footer />
-      </body>
+        </body>
     </html>
   );
 }
