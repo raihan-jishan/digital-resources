@@ -15,10 +15,10 @@ const Footer = () => {
             </a>
           </div>
           <div className="">
-            <div className="grid grid-cols-3 gap-12 sm:grid-cols-4">
+            <div className="grid grid-cols-3 gap-12 sm:grid-cols-4 max-lg:grid-cols-2">
               {footerLinks.map((item, index) => (
                 <div key={index}>
-                  <h2 className="mb-6  font-semibold text-gray-900 uppercase dark:text-white">
+                  <h2 className="mb-6    text-gray-900 uppercase dark:text-white font-openSans tracking-wide font-semibold">
                     {item.title}
                   </h2>
                   <ul className="text-gray-500 dark:text-gray-400 font-medium">
@@ -37,7 +37,7 @@ const Footer = () => {
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+          <span className="text-sm text-gray-900 sm:text-center ">
             © {new Date().getFullYear()}
             <a href="https://flowbite.com/" className="hover:underline">
               Digital Resources

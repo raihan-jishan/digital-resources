@@ -1,6 +1,5 @@
 import Section from "@/section/Section";
-import { Handshake, HandshakeIcon, HeartCrackIcon, HeartIcon, LucideMove3D } from "lucide-react";
-import Image from "next/image";
+import {  HandshakeIcon } from "lucide-react"; 
 import React from "react";
 
 const AlwaysHelpYou = () => {

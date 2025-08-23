@@ -18,7 +18,7 @@ export default function Home() {
       <Speciality />
       <OurClients />
       <Review />
-      <LetGetTouch /> 
+      <LetGetTouch />
     </div>
   );
 }

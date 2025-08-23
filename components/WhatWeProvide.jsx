@@ -6,7 +6,7 @@ import Section from "@/section/Section";
 
 const WhatWeProvide = () => {
   return (
-    <Section customBg={'bg-[#f6f6f6]/50'} id={'services'}>
+    <Section customBg={"bg-[#f6f6f6]/50"} id={"services"}>
       <Heading
         title={"What We Provide"}
         description={

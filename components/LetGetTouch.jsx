@@ -9,8 +9,8 @@ import { LetterText, Mail, MessageCircle } from "lucide-react";
 
 const LetGetTouch = () => {
   return (
-    <Section className={"mt-20 "} id={'contact'}>
-      <Heading title={"Let Get In Touch"}  />
+    <Section className={"mt-20 "} id={"contact"}>
+      <Heading title={"Let Get In Touch"} />
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center px-6 py-12 max-w-7xl mx-auto max-lg:flex max-lg:flex-col-reverse ">
         {/* Contact Form */}
         <div className="w-full max-w-xl mx-auto">
