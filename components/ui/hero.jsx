@@ -1,4 +1,4 @@
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button";
 import Section from "@/section/Section";
 
 const Hero = ({ item }) => {

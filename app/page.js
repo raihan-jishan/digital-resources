@@ -1,18 +1,14 @@
 import AlwaysHelpYou from "@/components/AlwaysHelpYou";
-import Hero from "../components/Hero.jsx";
+import Home from "@/components/Home";
 import LetGetTouch from "@/components/LetGetTouch";
 import OurClients from "@/components/OurClients";
 import Review from "@/components/Review";
 import Speciality from "@/components/Speciality";
-import WhatWeProvide from "@/components/WhatWeProvide";
-import { HeroData } from "@/constants/data";
-
+import WhatWeProvide from "@/components/WhatWeProvide"; 
 export default function Home() {
   return (
     <div>
-      {HeroData.map((item) => {
-        return <Hero key={item.id} item={item} />;
-      })}
+      <Home />
       <WhatWeProvide />
       <AlwaysHelpYou />
       <Speciality />
