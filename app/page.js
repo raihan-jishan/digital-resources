@@ -1,14 +1,14 @@
 import AlwaysHelpYou from "@/components/AlwaysHelpYou";
-import Home from "@/components/Home";
+import Hero from "@/components/Home";
 import LetGetTouch from "@/components/LetGetTouch";
 import OurClients from "@/components/OurClients";
 import Review from "@/components/Review";
 import Speciality from "@/components/Speciality";
-import WhatWeProvide from "@/components/WhatWeProvide"; 
+import WhatWeProvide from "@/components/WhatWeProvide";
 export default function Home() {
   return (
     <div>
-      <Home />
+      <Hero />
       <WhatWeProvide />
       <AlwaysHelpYou />
       <Speciality />
