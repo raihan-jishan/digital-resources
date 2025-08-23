@@ -1,5 +1,5 @@
 import AlwaysHelpYou from "@/components/AlwaysHelpYou";
-import Hero from "@/components/Hero";
+import Hero from "../components/Hero.jsx";
 import LetGetTouch from "@/components/LetGetTouch";
 import OurClients from "@/components/OurClients";
 import Review from "@/components/Review";
