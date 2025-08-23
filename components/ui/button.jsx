@@ -26,6 +26,8 @@ const buttonVariants = cva(
         lg: "h-10 rounded-md px-12 text-[1rem] font-semibold rounded-full p-7 max-lg:p-3 ",
         heroBtn:
           "h-10 rounded-md px-12 text-[1rem] font-semibold rounded-full p-7  max-lg:p-8",
+          workCard:
+          "h-10 rounded-md px-12 text-[1rem] font-semibold rounded-tl-xl rounded-br-xl p-7  max-lg:p-8",
         icon: "h-9 w-9",
       },
     },
