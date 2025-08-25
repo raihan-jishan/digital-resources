@@ -3,7 +3,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation"; 
 
 
-const NavLink = ({ path, label }) => {
+const NavLink = ({ path, label ,onClickFunction}) => {
   const pathName = usePathname();
   const isActive = pathName === path; 
   return (
@@ -14,6 +14,7 @@ const NavLink = ({ path, label }) => {
           isActive ? "border-black" : "border-b-transparent"
         } `}
         aria-current="page"
+        onClick={onClickFunction}
       >
         {label}
       </Link>

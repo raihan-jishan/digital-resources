@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Section from "@/section/Section";
+import Link from "next/link";
 
 const Hero = ({ item }) => {
   return (
@@ -13,9 +14,11 @@ const Hero = ({ item }) => {
             {item.description}
           </p>
           <div className="flex gap-3 max-lg:flex-col">
-            <Button variant="default" size="heroBtn">
-              {item.btn1}
-            </Button>
+              <Button variant="default" size="heroBtn">
+            <Link href={item.path1 ? item.path1 : '/works'}>
+                {item.btn1}
+            </Link>
+              </Button>
             <Button variant="default" size="heroBtn">
               {item.btn2}
             </Button>

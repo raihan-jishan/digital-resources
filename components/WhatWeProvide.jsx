@@ -1,4 +1,5 @@
-import { GlobeLock, Workflow } from "lucide-react";
+ 
+import GridSection from "@/section/GridSection";
 import { ProvideCard } from "./ui/card";
 import { Heading } from "./ui/heading";
 import { WhatWeProvideData } from "@/constants/data";
@@ -13,7 +14,7 @@ const WhatWeProvide = () => {
           "We deliver tailored services and solutions with a focus on quality, reliability, and value."
         }
       />
-      <div className="grid grid-cols-3 m-10 p-6  gap-5 max-lg:grid-cols-1 max-lg:m-0  ">
+      <GridSection varient={'primary'}>
         {WhatWeProvideData.map((item) => {
           return (
             <ProvideCard
@@ -24,7 +25,7 @@ const WhatWeProvide = () => {
             />
           );
         })}
-      </div>
+      </GridSection>
     </Section>
   );
 };

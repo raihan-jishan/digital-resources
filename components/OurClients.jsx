@@ -4,6 +4,7 @@ import { Heading } from "./ui/heading";
 import { CompanyLogo } from "./ui/card";
 import { Slack } from "lucide-react";
 import { CompanyLogoData } from "@/constants/data";
+import GridSection from "@/section/GridSection";
 
 const OurClients = () => {
   return (
@@ -14,11 +15,11 @@ const OurClients = () => {
           "     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore corporis beatae qui quae est pariatur."
         }
       />
-      <div className="grid grid-cols-4  ml-[10rem] p-12 max-lg:ml-0 max-lg:p-5">
+      <GridSection varient={"clients"}>
         {CompanyLogoData.map((item) => {
           return <CompanyLogo key={item.id} icon={item.icon} />;
         })}
-      </div>
+      </GridSection>
     </Section>
   );
 };

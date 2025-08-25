@@ -1,4 +1,11 @@
 // inpiritiion of design layout
 link:-> https://www.behance.net/gallery/108899313/Digital-Agency-Website-UI-Design
 full cover design -> https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/285925108899313.5fc7c23b018e2.jpg
+
+// update list for website 
+(1) update the navbar close and open function . ✅
+(2) fix the width of the project card for mobile device  ✅
+(3) add animation on the section 
+(4) utilize the images from server ✅  || fix in local does  ..... 
+(5) utilize all grid div's in one section component. 
  

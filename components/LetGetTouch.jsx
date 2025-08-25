@@ -6,6 +6,7 @@ import Input from "./ui/Input";
 import Textarea from "./ui/textarea";
 import { Button } from "./ui/button";
 import { LetterText, Mail, MessageCircle } from "lucide-react";
+import { QuickResponse } from "@/public/assets";
 
 const LetGetTouch = () => {
   return (
@@ -52,7 +53,7 @@ const LetGetTouch = () => {
         {/* Image Section */}
         <div className="flex justify-center w-full max-w-md mx-auto">
           <Image
-            src="assets/Quick-response.svg"
+            src={QuickResponse}
             width={400}
             height={300}
             alt="Customer support"

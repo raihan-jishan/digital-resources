@@ -1,7 +1,14 @@
 import {
+  CustomerSatisfaction,
+  GreatCommunication,
+  HelpYou,
+  QuickResponse,
+} from "@/public/assets";
+import {
   BotMessageSquare,
   Facebook,
   GlobeLock,
+  HandshakeIcon,
   LayoutPanelLeft,
   LeafyGreen,
   LoaderPinwheel,
@@ -24,6 +31,7 @@ export const HeroData = [
       "We design intuitive digital tools that make your workflow easier, faster, and smarter — no matter how complex the task. ",
     btn1: "Our works",
     btn2: "Know more",
+    path1:'/works',
     image: "assets/heroIllustration.gif",
   },
 ];
@@ -76,21 +84,21 @@ export const WhatWeProvideData = [
 export const SpecialityCardData = [
   {
     id: 0,
-    imageUrl: "assets/Quick-response.svg",
+    imageUrl: QuickResponse,
     label: "Quick Response",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eius laudantium, blanditiis, esse cum commodi architecto tempora, quidem quo minus suscipit animi minima dicta! A eius ipsa fugit commodi doloremque!",
   },
   {
     id: 1,
-    imageUrl: "assets/great-communication.svg",
+    imageUrl: GreatCommunication,
     label: "Great Communication",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eius laudantium, blanditiis, esse cum commodi architecto tempora, quidem quo minus suscipit animi minima dicta! A eius ipsa fugit commodi doloremque!   ",
   },
   {
     id: 2,
-    imageUrl: "assets/customer-satifisfaction.svg",
+    imageUrl: CustomerSatisfaction,
     label: "Customer  Satifisfaction",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum eius laudantium, blanditiis, esse cum commodi architecto tempora, quidem quo minus suscipit animi minima dicta! A eius ipsa fugit commodi doloremque!  ",
@@ -215,48 +223,71 @@ export const ReviewData = [
   },
 ];
 
-
 export const WorksData = [
   {
-    id:0,
-    label:"off.vstore",
-    description:"Your go-to destination for curated streetwear, exclusive drops, and everyday essentials. Shop the latest trends with unbeatable prices and fast shipping.",
-    imageUrl:"https://cdn.dribbble.com/userupload/13606668/file/original-828e65a135620231018173b2b69c38ae.png?resize=850x638&vertical=center",
-    path:"",
- },
+    id: 0,
+    label: "off.vstore",
+    description:
+      "Your go-to destination for curated streetwear, exclusive drops, and everyday essentials. Shop the latest trends with unbeatable prices and fast shipping.",
+    imageUrl:
+      "https://cdn.dribbble.com/userupload/13606668/file/original-828e65a135620231018173b2b69c38ae.png?resize=850x638&vertical=center",
+    path: "",
+  },
   {
-    id:1,
-    label:"hungry-bites",
-    description:"Crave it. Bite it. Love it. Discover mouthwatering snacks, gourmet treats, and everyday munchies delivered to your door. Satisfaction in every bite.",
-    imageUrl:"https://cdn.dribbble.com/userupload/16825516/file/original-6e7d42a74d75a8552a73db9f2bed0f48.png?resize=1024x716&vertical=center",
-    path:"",
- },
+    id: 1,
+    label: "hungry-bites",
+    description:
+      "Crave it. Bite it. Love it. Discover mouthwatering snacks, gourmet treats, and everyday munchies delivered to your door. Satisfaction in every bite.",
+    imageUrl:
+      "https://cdn.dribbble.com/userupload/16825516/file/original-6e7d42a74d75a8552a73db9f2bed0f48.png?resize=1024x716&vertical=center",
+    path: "",
+  },
   {
-    id:2,
-    label:"Evently",
-    description:"Plan less, enjoy more. Your all-in-one destination for event essentials, from stylish decor to party-perfect supplies. Make every moment unforgettable.",
-    imageUrl:"https://cdn.dribbble.com/userupload/18417782/file/original-9e2076a0be958054a6443da0a1aa47a6.png?resize=1024x768&vertical=center",
-    path:"",
- },
+    id: 2,
+    label: "Evently",
+    description:
+      "Plan less, enjoy more. Your all-in-one destination for event essentials, from stylish decor to party-perfect supplies. Make every moment unforgettable.",
+    imageUrl:
+      "https://cdn.dribbble.com/userupload/18417782/file/original-9e2076a0be958054a6443da0a1aa47a6.png?resize=1024x768&vertical=center",
+    path: "",
+  },
   {
-    id:2,
-    label:"FitLife tracker",
-    description:"Fuel your fitness journey. Shop premium activewear, wellness essentials, and gear that moves with you. Stronger starts here.",
-    imageUrl:"https://cdn.dribbble.com/userupload/18408584/file/original-578b7b01c6b971ec9a567fb0b81c9d7f.jpg?resize=1024x768&vertical=center",
-    path:"",
- },
+    id: 2,
+    label: "FitLife tracker",
+    description:
+      "Fuel your fitness journey. Shop premium activewear, wellness essentials, and gear that moves with you. Stronger starts here.",
+    imageUrl:
+      "https://cdn.dribbble.com/userupload/18408584/file/original-578b7b01c6b971ec9a567fb0b81c9d7f.jpg?resize=1024x768&vertical=center",
+    path: "",
+  },
   {
-    id:2,
-    label:"Dream home reality",
-    description:"Turning your dream home into a reality. Explore elegant furniture, stylish décor, and smart home solutions that bring comfort and beauty to every space.",
-    imageUrl:"https://cdn.dribbble.com/userupload/32713059/file/original-511336ffce2cb79e93d4b8418e08067a.png?resize=1024x768&vertical=center",
-    path:"",
- },
+    id: 2,
+    label: "Dream home reality",
+    description:
+      "Turning your dream home into a reality. Explore elegant furniture, stylish décor, and smart home solutions that bring comfort and beauty to every space.",
+    imageUrl:
+      "https://cdn.dribbble.com/userupload/32713059/file/original-511336ffce2cb79e93d4b8418e08067a.png?resize=1024x768&vertical=center",
+    path: "",
+  },
   {
-    id:3,
-    label:"Edu Connect",
-    description:"Bridging learners and educators. Access quality courses, expert tutors, and learning tools designed to empower education anytime, anywhere.",
-    imageUrl:"https://cdn.dribbble.com/userupload/15005532/file/original-083a36440313bda4aea57dabc2b502d2.jpg?resize=1024x768&vertical=center",
-    path:"",
- },
-]
+    id: 3,
+    label: "Edu Connect",
+    description:
+      "Bridging learners and educators. Access quality courses, expert tutors, and learning tools designed to empower education anytime, anywhere.",
+    imageUrl:
+      "https://cdn.dribbble.com/userupload/15005532/file/original-083a36440313bda4aea57dabc2b502d2.jpg?resize=1024x768&vertical=center",
+    path: "",
+  },
+];
+
+export const AlwaysHelpYouData = [
+  {
+    id: 0,
+    label1: "We are here to always",
+    label2: "help you",
+    icon: <HandshakeIcon size={50} className="bg-green-400/10   " />,
+    description:
+      "  Lorem ipsum dolor sit amet consectetur adipisicing elit.   Reprehenderit quod quos, maxime ea doloribus quisquam voluptate  exercitationem, nesciunt quidem quam temporibus adipisci eum  facilis, maiores rem aliquam nobis ab repudiandae?",
+    image: HelpYou,
+  },
+];

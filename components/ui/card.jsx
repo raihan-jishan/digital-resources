@@ -104,7 +104,7 @@ export const ReviewCard = ({
 
 export const WorkCard = ({ label, description, imageUrl }) => {
   return (
-    <div className="relative flex flex-col my-6 bg-gray-50 shadow-sm border border-slate-100 rounded-lg w-96">
+    <div className="relative flex flex-col my-6 bg-gray-50 shadow-sm border border-slate-100 rounded-lg w-full">
       <div className="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
         <Image src={imageUrl} alt="card-image" width={600} height={200} />
       </div>

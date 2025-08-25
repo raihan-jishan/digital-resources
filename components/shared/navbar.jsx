@@ -11,6 +11,7 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
 
   const openNav = () => setNav(!nav);
+  const closeNav = () => setNav(false);
 
   return (
     <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
@@ -41,7 +42,7 @@ const Navbar = () => {
           <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-9 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 max-lg:p-6 max-lg:flex max-lg:items-center max-lg:space-y-5">
             {NavLinkData.map((item) => {
               return (
-                <NavLink key={item.id} label={item.label} path={item.path} />
+                <NavLink key={item.id} label={item.label} path={item.path} onClickFunction={closeNav} />
               );
             })}
           </ul>
